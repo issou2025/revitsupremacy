@@ -1,0 +1,719 @@
+:root {
+    --primary-color: #002B5B;
+    --secondary-color: #F9F9F9;
+    --accent-color: #FF7A00;
+    --text-color: #333;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: var(--accent-color);
+}
+
+.lang-switcher a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.lang-switcher a.active {
+    color: var(--accent-color);
+}
+
+
+/* Hero Section */
+.hero {
+    color: white;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 43, 91, 0.85), rgba(0, 43, 91, 0.6));
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    font-family: var(--font-primary);
+    background: var(--accent-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e66a00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Features Grid */
+.features-grid {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.features-grid h2 {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.feature-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.feature-item .fas {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Page Title Section */
+.page-title {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.page-title h1 {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+}
+
+
+/* Table Comparison */
+.table-comparison {
+    padding: 4rem 2rem;
+}
+
+.table-comparison h2 {
+    font-family: var(--font-primary);
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.table-comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    background: white;
+}
+
+.table-comparison th, .table-comparison td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-comparison th {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--font-primary);
+}
+
+.table-comparison td:first-child {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.table-comparison td {
+    transition: background-color 0.3s ease;
+}
+
+.table-comparison tbody tr:hover td {
+    background-color: #f5f5f5;
+}
+
+/* Argumentaire Section */
+.argumentaire {
+    padding: 0 2rem 4rem;
+}
+
+.argumentaire h2 {
+    font-family: var(--font-primary);
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.argumentaire ul {
+    max-width: 800px;
+    margin: auto;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.argumentaire li {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-left: 5px solid var(--accent-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+/* Article Section */
+.article-section {
+    padding: 4rem 2rem;
+    background: #fff;
+}
+
+.article-section article {
+    max-width: 800px;
+    margin: auto;
+}
+
+.article-section h2 {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.article-section p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Cards (for Case Studies, Formations, etc.) */
+.case-study-cards, .formation_cards, .testimonials, .article_list { /* General card section styling */
+    padding: 4rem 2rem;
+}
+
+.case-study-cards h2, .formation_cards h2, .testimonials h2, .article_list h2 {
+    font-family: var(--font-primary);
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-card .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 3px solid var(--accent-color);
+}
+
+.testimonial-card .content {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.testimonial-card .name {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-family: var(--font-primary);
+}
+
+/* Blog / Article List */
+.article-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.article-card {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-left: 5px solid var(--accent-color);
+}
+
+.article-card h3 a {
+    color: var(--primary-color);
+    font-family: var(--font-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.article-card h3 a:hover {
+    color: var(--accent-color);
+}
+
+.article-card .meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.read-more {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+/* Single Article Page */
+.single-article-page {
+    background: #fff;
+    padding: 4rem 2rem;
+}
+
+.single-article-page .container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.single-article-page .article-header h1 {
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.single-article-page .meta {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+}
+
+.single-article-page .article-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.single-article-page .article-body p {
+    margin-bottom: 1.5rem;
+}
+
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 2rem;
+}
+
+.contact-section .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+}
+
+.contact-form-container, .newsletter-container {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-section h2 {
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+}
+
+form .cta-button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter-container form {
+    display: flex;
+    gap: 1rem;
+}
+
+.direct-contact {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.direct-contact h3 {
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.direct-contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.direct-contact p i {
+    color: var(--accent-color);
+    margin-right: 10px;
+}
+
+
+/* --- Animations --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+/* --- Responsive Design --- */
+
+/* Mobile Nav Toggle */
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    z-index: 1001;
+    transition: color 0.3s ease;
+}
+
+.nav-open .nav-toggle {
+    color: white; /* Change color for close icon */
+}
+
+@media (max-width: 992px) {
+    header nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start off-screen */
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--primary-color);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.35s ease-in-out;
+        display: flex;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+    }
+
+    header nav ul.active {
+        right: 0; /* Slide in */
+    }
+    
+    header nav ul li a {
+        color: var(--secondary-color);
+        font-size: 1.5rem;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .lang-switcher {
+        margin-left: auto;
+        padding-right: 1rem;
+    }
+
+    .contact-section .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .features-grid h2, 
+    .table-comparison h2, 
+    .argumentaire h2,
+    .article-section h2,
+    .case-study-cards h2,
+    .formation_cards h2,
+    .testimonials h2,
+    .article_list h2,
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    /* Responsive Tables */
+    .table-comparison table, .table-comparison thead, .table-comparison tbody, .table-comparison th, .table-comparison td, .table-comparison tr {
+        display: block;
+    }
+
+    .table-comparison thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .table-comparison tr {
+        border: 1px solid #ddd;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .table-comparison td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .table-comparison tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .table-comparison td:last-child {
+        border-bottom: none;
+    }
+
+    .table-comparison td:before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1rem;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        font-family: var(--font-primary);
+        color: var(--primary-color);
+    }
+
+    /* Set the data-label for each cell */
+    .table-comparison td:nth-of-type(1):before { content: "Fonctionnalité"; }
+    body[data-page='revit-vs-autocad'] .table-comparison td:nth-of-type(2):before { content: "Revit"; }
+    body[data-page='revit-vs-autocad'] .table-comparison td:nth-of-type(3):before { content: "AutoCAD"; }
+    
+    body[data-page='revit-vs-archicad'] .table-comparison td:nth-of-type(2):before { content: "Revit"; }
+    body[data-page='revit-vs-archicad'] .table-comparison td:nth-of-type(3):before { content: "ArchiCAD"; }
+}
+
+@media (max-width: 480px) {
+    header nav {
+        padding: 1rem;
+    }
+
+    .logo span {
+        display: none; /* Hide text logo on very small screens */
+    }
+} 

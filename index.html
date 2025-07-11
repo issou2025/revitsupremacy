@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,9 @@
     <title>Revit Supremacy - L'outil BIM qui surclasse AutoCAD et ArchiCAD</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/revit-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For icons -->
     <script type="application/ld+json">
     {
@@ -44,8 +45,16 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="lang-switcher">
-                <a href="#" class="active">FR</a> | <a href="#">EN</a>
+            <div class="header-controls">
+                <div class="theme-toggle">
+                    <button id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a href="#" class="active">FR</a> | <a href="#">EN</a>
+                </div>
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -65,18 +74,18 @@
         <section class="features-grid reveal">
             <h2>Pourquoi Revit est supérieur</h2>
             <div class="features-container grid-flex">
-                <div class="feature-item">
-                    <i class="fas fa-cube"></i>
+                <div class="feature-item shine-effect">
+                    <i class="fas fa-cube icon-animated icon-gradient icon-shadow"></i>
                     <h3>Modélisation 3D BIM intégrée</h3>
                     <p>Revit propose un environnement BIM complet et intégré dès la base, là où AutoCAD reste orienté 2D.</p>
                 </div>
-                <div class="feature-item">
-                    <i class="fas fa-users"></i>
+                <div class="feature-item shine-effect">
+                    <i class="fas fa-users icon-animated icon-gradient icon-shadow"></i>
                     <h3>Coordination interdisciplinaire</h3>
                     <p>Avec Revit, les architectes, ingénieurs et MEP peuvent collaborer dans un modèle unique, réduisant les erreurs.</p>
                 </div>
-                <div class="feature-item">
-                    <i class="fas fa-file-alt"></i>
+                <div class="feature-item shine-effect">
+                    <i class="fas fa-file-alt icon-animated icon-gradient icon-shadow"></i>
                     <h3>Documentation automatique</h3>
                     <p>Revit génère automatiquement les plans, coupes, quantitatifs, et mises à jour en temps réel.</p>
                 </div>
@@ -88,25 +97,25 @@
                 <h2>Formations Revit Recommandées</h2>
                 <p class="section-subtitle">Accélérez votre apprentissage avec ces ressources de qualité</p>
                 <div class="training-cards grid-flex">
-                    <div class="training-card">
-                        <h3>Formation Revit Architecture</h3>
+                    <div class="training-card wave-effect">
+                        <h3><i class="fas fa-building icon-pulse icon-gradient"></i> Formation Revit Architecture</h3>
                         <p>Maîtrisez les fondamentaux de la modélisation architecturale avec Revit.</p>
-                        <a href="https://amzn.to/44CbpMM" target="_blank" rel="noopener" class="cta-button">
-                            <i class="fas fa-external-link-alt"></i> Voir la formation
+                        <a href="https://amzn.to/44CbpMM" target="_blank" rel="noopener" class="cta-button shine-effect">
+                            <i class="fas fa-external-link-alt icon-animated"></i> Voir la formation
                         </a>
                     </div>
-                    <div class="training-card">
-                        <h3>Formation Revit Structure</h3>
+                    <div class="training-card wave-effect">
+                        <h3><i class="fas fa-hard-hat icon-pulse icon-gradient"></i> Formation Revit Structure</h3>
                         <p>Développez vos compétences en modélisation structurelle et calculs BIM.</p>
-                        <a href="https://amzn.to/44HTd4u" target="_blank" rel="noopener" class="cta-button">
-                            <i class="fas fa-external-link-alt"></i> Voir la formation
+                        <a href="https://amzn.to/44HTd4u" target="_blank" rel="noopener" class="cta-button shine-effect">
+                            <i class="fas fa-external-link-alt icon-animated"></i> Voir la formation
                         </a>
                     </div>
-                    <div class="training-card">
-                        <h3>Formation Revit MEP</h3>
+                    <div class="training-card wave-effect">
+                        <h3><i class="fas fa-tools icon-pulse icon-gradient"></i> Formation Revit MEP</h3>
                         <p>Spécialisez-vous dans les installations MEP avec Revit.</p>
-                        <a href="https://amzn.to/44G3nCK" target="_blank" rel="noopener" class="cta-button">
-                            <i class="fas fa-external-link-alt"></i> Voir la formation
+                        <a href="https://amzn.to/44G3nCK" target="_blank" rel="noopener" class="cta-button shine-effect">
+                            <i class="fas fa-external-link-alt icon-animated"></i> Voir la formation
                         </a>
                     </div>
                 </div>
@@ -121,13 +130,13 @@
         <div class="footer-content">
             <div class="footer-logo">Revit Supremacy</div>
             <div class="footer-links">
-                <a href="index.html">Accueil</a>
-                <a href="revit-vs-autocad.html">Comparaisons</a>
-                <a href="bim-revit.html">BIM</a>
-                <a href="etudes-de-cas.html">Études de cas</a>
-                <a href="formations-revit.html">Formations</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="revit-vs-autocad.html"><i class="fas fa-balance-scale"></i> Comparaisons</a>
+                <a href="bim-revit.html"><i class="fas fa-cubes"></i> BIM</a>
+                <a href="etudes-de-cas.html"><i class="fas fa-briefcase"></i> Études de cas</a>
+                <a href="formations-revit.html"><i class="fas fa-graduation-cap"></i> Formations</a>
+                <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
             </div>
             <div class="footer-socials">
                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -149,5 +158,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/backtotop.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/modern-enhancements.js"></script>
 </body>
 </html> 

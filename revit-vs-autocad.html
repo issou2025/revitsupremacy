@@ -7,7 +7,10 @@
     <title>Revit vs AutoCAD - Comparaison - Revit Supremacy</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/revit-icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body data-page="revit-vs-autocad">
     <header>
@@ -27,8 +30,16 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="lang-switcher">
-                <a href="#" class="active">FR</a> | <a href="#">EN</a>
+            <div class="header-controls">
+                <div class="theme-toggle">
+                    <button id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a href="#" class="active">FR</a> | <a href="#">EN</a>
+                </div>
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -38,12 +49,12 @@
 
     <main>
         <section class="page-title">
-            <h1>Revit vs AutoCAD</h1>
+            <h1><i class="fas fa-balance-scale"></i> Revit vs AutoCAD</h1>
         </section>
         
         <section class="table-comparison reveal">
             <div class="container">
-                <h2>Revit vs AutoCAD : tableau comparatif</h2>
+                <h2><i class="fas fa-chart-bar"></i> Revit vs AutoCAD : tableau comparatif</h2>
                 <table>
                     <thead>
                         <tr>
@@ -54,29 +65,29 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Modélisation 3D</td>
-                            <td>✅ Avancée (BIM)</td>
-                            <td>🔴 Limitée</td>
+                            <td><i class="fas fa-cube"></i> Modélisation 3D</td>
+                            <td><i class="fas fa-check-circle text-success"></i> Avancée (BIM)</td>
+                            <td><i class="fas fa-times-circle text-danger"></i> Limitée</td>
                         </tr>
                         <tr>
-                            <td>Collaboration cloud</td>
-                            <td>✅ Intégré via BIM 360</td>
-                            <td>🔴 Nécessite outils externes</td>
+                            <td><i class="fas fa-cloud"></i> Collaboration cloud</td>
+                            <td><i class="fas fa-check-circle text-success"></i> Intégré via BIM 360</td>
+                            <td><i class="fas fa-times-circle text-danger"></i> Nécessite outils externes</td>
                         </tr>
                         <tr>
-                            <td>Quantitatifs</td>
-                            <td>✅ Automatisés</td>
-                            <td>🔴 Manuels</td>
+                            <td><i class="fas fa-calculator"></i> Quantitatifs</td>
+                            <td><i class="fas fa-check-circle text-success"></i> Automatisés</td>
+                            <td><i class="fas fa-times-circle text-danger"></i> Manuels</td>
                         </tr>
                         <tr>
-                            <td>Dynamique des vues</td>
-                            <td>✅ Oui</td>
-                            <td>🔴 Non</td>
+                            <td><i class="fas fa-eye"></i> Dynamique des vues</td>
+                            <td><i class="fas fa-check-circle text-success"></i> Oui</td>
+                            <td><i class="fas fa-times-circle text-danger"></i> Non</td>
                         </tr>
                         <tr>
-                            <td>Coordination MEP</td>
-                            <td>✅ Native</td>
-                            <td>🔴 Non pris en charge</td>
+                            <td><i class="fas fa-tools"></i> Coordination MEP</td>
+                            <td><i class="fas fa-check-circle text-success"></i> Native</td>
+                            <td><i class="fas fa-times-circle text-danger"></i> Non pris en charge</td>
                         </tr>
                     </tbody>
                 </table>
@@ -94,30 +105,30 @@
 
         <section class="argumentaire reveal">
             <div class="container">
-                <h2>Pourquoi Revit remplace AutoCAD dans les grands projets</h2>
+                <h2><i class="fas fa-trophy"></i> Pourquoi Revit remplace AutoCAD dans les grands projets</h2>
                 <ul>
-                    <li>AutoCAD est un logiciel de dessin alors que Revit est une plateforme de modélisation.</li>
-                    <li>Revit diminue les risques de collision grâce à la coordination interdisciplinaire.</li>
-                    <li>Les plans changent automatiquement avec Revit, pas besoin de tout refaire.</li>
+                    <li><i class="fas fa-drafting-compass"></i> AutoCAD est un logiciel de dessin alors que Revit est une plateforme de modélisation.</li>
+                    <li><i class="fas fa-shield-alt"></i> Revit diminue les risques de collision grâce à la coordination interdisciplinaire.</li>
+                    <li><i class="fas fa-sync-alt"></i> Les plans changent automatiquement avec Revit, pas besoin de tout refaire.</li>
                 </ul>
             </div>
         </section>
     </main>
 
     <!-- Back to top button -->
-    <button id="topBtn" aria-label="Retour haut">▲</button>
+    <button id="topBtn" aria-label="Retour haut"><i class="fas fa-arrow-up"></i></button>
 
     <footer>
         <div class="footer-content">
             <div class="footer-logo">Revit Supremacy</div>
             <div class="footer-links">
-                <a href="index.html">Accueil</a>
-                <a href="revit-vs-autocad.html">Comparaisons</a>
-                <a href="bim-revit.html">BIM</a>
-                <a href="etudes-de-cas.html">Études de cas</a>
-                <a href="formations-revit.html">Formations</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="revit-vs-autocad.html"><i class="fas fa-balance-scale"></i> Comparaisons</a>
+                <a href="bim-revit.html"><i class="fas fa-cubes"></i> BIM</a>
+                <a href="etudes-de-cas.html"><i class="fas fa-briefcase"></i> Études de cas</a>
+                <a href="formations-revit.html"><i class="fas fa-graduation-cap"></i> Formations</a>
+                <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
             </div>
             <div class="footer-socials">
                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -130,5 +141,6 @@
 
     <script src="js/script.js"></script>
     <script src="js/backtotop.js"></script>
+    <script src="js/theme-toggle.js"></script>
 </body>
 </html> 

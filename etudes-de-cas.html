@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/revit-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css" integrity="sha512-YOAbi89P9F8QrvJ8V+RaH//RUW2KIiMzFxLpy0X58F3RDeo63eNbUsVTNff7kwh28ykVfoCEN0z7rlaRykGq9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -44,32 +45,32 @@
         <section class="case-study-cards reveal">
             <div class="container">
                 <h2>Ils ont choisi Revit</h2>
-                <div class="cards-container">
+                <div class="cards-container gallery grid-flex">
                     <div class="card">
-                        <img src="https://picsum.photos/seed/dubai/400/250" alt="Tour de Dubaï">
+                        <a href="images/revit-water-tower.png">
+                            <img src="images/revit-water-tower.png" alt="Réservoir sur tour" loading="lazy">
+                        </a>
                         <div class="card-content">
-                            <h3>Tour de Dubaï</h3>
-                            <p>La coordination des disciplines a permis de gagner 30% de temps sur le chantier grâce à Revit.</p>
+                            <h3>Réservoir sur tour</h3>
+                            <p>Modélisation 3D précise de la charpente et du réservoir sous Revit pour étude structurelle.</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="https://picsum.photos/seed/abidjan/400/250" alt="Université d’Abidjan">
+                        <a href="images/revit-parking-structure.png">
+                            <img src="images/revit-parking-structure.png" alt="Parking métallique à deux niveaux" loading="lazy">
+                        </a>
                         <div class="card-content">
-                            <h3>Université d’Abidjan</h3>
-                            <p>Revit a permis de créer un modèle centralisé utilisé par l’équipe structure et MEP.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="https://picsum.photos/seed/paris/400/250" alt="Hôpital de Paris">
-                        <div class="card-content">
-                            <h3>Hôpital de Paris</h3>
-                            <p>Revit a servi à générer les quantitatifs en temps réel pour tous les appels d’offres.</p>
+                            <h3>Parking métallique à deux niveaux</h3>
+                            <p>Structure optimisée en acier avec couverture légère, visualisation complète et plans détaillés.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Back to top button -->
+    <button id="topBtn" aria-label="Retour haut">▲</button>
 
     <footer>
         <div class="footer-content">
@@ -93,5 +94,8 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" integrity="sha512-0I41sJLdnOjFkWDXLI4YAlnXrhIRbkIuAeGHNirMRHkRkNvztNFVQVw1Gc7YCOUMIqFZRMVAbwYSEuxsjjFzjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>baguetteBox.run('.gallery');</script>
+    <script src="js/backtotop.js"></script>
 </body>
 </html> 

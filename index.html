@@ -7,6 +7,7 @@
     <title>Revit Supremacy - L'outil BIM qui surclasse AutoCAD et ArchiCAD</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/revit-icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For icons -->
     <script type="application/ld+json">
@@ -63,7 +64,7 @@
 
         <section class="features-grid reveal">
             <h2>Pourquoi Revit est supérieur</h2>
-            <div class="features-container">
+            <div class="features-container grid-flex">
                 <div class="feature-item">
                     <i class="fas fa-cube"></i>
                     <h3>Modélisation 3D BIM intégrée</h3>
@@ -81,7 +82,40 @@
                 </div>
             </div>
         </section>
+
+        <section class="training-section reveal">
+            <div class="container">
+                <h2>Formations Revit Recommandées</h2>
+                <p class="section-subtitle">Accélérez votre apprentissage avec ces ressources de qualité</p>
+                <div class="training-cards grid-flex">
+                    <div class="training-card">
+                        <h3>Formation Revit Architecture</h3>
+                        <p>Maîtrisez les fondamentaux de la modélisation architecturale avec Revit.</p>
+                        <a href="https://amzn.to/44CbpMM" target="_blank" rel="noopener" class="cta-button">
+                            <i class="fas fa-external-link-alt"></i> Voir la formation
+                        </a>
+                    </div>
+                    <div class="training-card">
+                        <h3>Formation Revit Structure</h3>
+                        <p>Développez vos compétences en modélisation structurelle et calculs BIM.</p>
+                        <a href="https://amzn.to/44HTd4u" target="_blank" rel="noopener" class="cta-button">
+                            <i class="fas fa-external-link-alt"></i> Voir la formation
+                        </a>
+                    </div>
+                    <div class="training-card">
+                        <h3>Formation Revit MEP</h3>
+                        <p>Spécialisez-vous dans les installations MEP avec Revit.</p>
+                        <a href="https://amzn.to/44G3nCK" target="_blank" rel="noopener" class="cta-button">
+                            <i class="fas fa-external-link-alt"></i> Voir la formation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Back to top button -->
+    <button id="topBtn" aria-label="Retour haut">▲</button>
 
     <footer>
         <div class="footer-content">
@@ -100,11 +134,20 @@
                 <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
+            <div class="footer-training">
+                <h4>📚 Formations Recommandées</h4>
+                <p>
+                    <a href="https://amzn.to/44CbpMM" target="_blank" rel="noopener">Architecture</a> | 
+                    <a href="https://amzn.to/44HTd4u" target="_blank" rel="noopener">Structure</a> | 
+                    <a href="https://amzn.to/44G3nCK" target="_blank" rel="noopener">MEP</a>
+                </p>
+            </div>
             <p>&copy; 2025 Revit Supremacy. Tous droits réservés.</p>
             <p>Domaine : revit-vs-autocad-archicad.com</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/backtotop.js"></script>
 </body>
 </html> 
